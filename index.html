@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No 11</title>
+    <style>
+        .passwordCheck {
+            position: relative;
+            left: 300px;
+        }
+
+        .img {
+            margin: 0px auto;
+            position: relative;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .roller {
+            position: absolute;
+            left: 20px;
+            top: 150px;
+            font-size: 30px;
+            background-color: black;
+            color: white;
+
+        }
+
+        .roll {
+            position: absolute;
+            right: 20px;
+            top: 150px;
+            font-size: 30px;
+            background-color: black;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;flex-direction:column;align-items:center;">
+        <div style="border:3px solid blue;padding:20px;width:600px;margin:10px;">
+            <h1>Password Strength</h1>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Please Enter password" required><span id="span"
+                style="color:red;padding-left:10px;"></span><br>
+            <button onclick="submit()">Submit</button>
+        </div>
+        <div style="border:3px solid blue;padding:20px;width:600px;">
+            <h1>String palindrome</h1>
+            <label for="text">Input String</label>
+            <input type="text" id="text" placeholder="Please Enter any String">
+            <span id="pan" style="color:red;"></span>
+            <button onclick="checkString()">Submit</button><br>
+            <h3 id="para"></h3>
+        </div>
+        <div style="text-align: center;">
+        <h1>Image Carousal</h1>
+        <div class="img">
+            <button onclick="getPrevious()" class="roller"><</button>
+                    <img id="img" src="./assets/a.jpg" alt="" width="700px" height="400px">
+                    <button onclick="getNext()" class="roll">></button>
+        </div>
+        </div>
+        <div style="text-align:center;border:3px solid blue;padding:20px;width:600px;margin:20px;">
+        <h1 style="text-align:center;">Random Number Guessing Game</h1>
+        <label for="Text">Guess Number between 1 and 100:</label>
+            <input type="text" id="Text" placeholder="Please Guess any number">
+            <p id="result"></p>
+            <p id="attempts"></p>
+            <button onclick="checkGuess()">Submit</button>
+        </div>
+        <div style="text-align:center;border:3px solid blue;padding:20px;width:600px;margin:20px;">
+            <h1 style="text-align:center;">Morse Code Translator</h1>
+            <label for="code">Enter Text</label>
+                <input type="text" id="code" placeholder="Please Enter Text">
+                <p id="translate"></p>
+                <button onclick="morseCode()">Submit</button>
+            </div>
+    </div>
+
+
+
+
+    <!-- <div id="countdown"></div> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
